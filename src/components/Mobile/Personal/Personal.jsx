@@ -15,9 +15,36 @@ const Personal = () => {
   const [isPhoneError, setIsPhoneError] = useState(false);
   const [phoneError, setPhoneError] = useState("");
 
+  const validateEmail = (email) => {
+    if (email === "") {
+      return false;
+    }
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
+  const validatePhone = (inpPhone) => {
+    if (inpPhone === "") {
+      return false;
+    }
+    return inpPhone?.match(/\d/g)?.length === 10;
+  };
   const onSubmitHandler = () => {
     setIsEmailError(false);
     setIsPhoneError(false);
+    setEmailError("");
+    setPhoneError("");
+
+    if (!validatePhone(phone)) {
+      setIsPhoneError(true);
+      setPhoneError("Wrong number");
+    }
+    if (!validateEmail(email)) {
+      setIsEmailError(true);
+      setEmailError("Wrong email");
+    }
     if (!email) {
       setIsEmailError(true);
       setEmailError("This field required");
