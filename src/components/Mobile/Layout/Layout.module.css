@@ -1,0 +1,13 @@
+.Layout {
+  position: relative;
+}
+.Outlet {
+  position: absolute;
+  top: 60%;
+  margin: 0 16px;
+  padding: 16px;
+  width: calc(100% - 32px);
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: var(--white);
+}

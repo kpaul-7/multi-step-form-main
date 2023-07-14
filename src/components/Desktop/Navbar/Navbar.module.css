@@ -1,0 +1,46 @@
+.Navbar {
+  position: relative;
+}
+.Navbar nav {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translateX(-50%);
+}
+
+.Navbar ul {
+  /* display: flex; */
+  list-style: none;
+}
+.NavElements {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.NavDetails {
+  width: 200px;
+  color: var(--pastelBlue);
+  font-size: 0.9em;
+  margin-left: 16px;
+}
+.Navbar ul li {
+  margin: 0 16px;
+}
+.Navbar ul a {
+  text-decoration: none;
+  display: block;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /* background-color: var(--pastelBlue); */
+  border: 1px solid var(--pastelBlue);
+  color: var(--pastelBlue);
+}
+.activePath {
+  background-color: var(--pastelBlue);
+  color: var(--marineBlue) !important;
+}

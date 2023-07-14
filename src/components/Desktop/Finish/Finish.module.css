@@ -1,0 +1,66 @@
+.Finish {
+  color: var(--marineBlue);
+}
+.Heading {
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+.Info {
+  margin-bottom: 16px;
+}
+.ChoosenPlan {
+  border-bottom: 1px solid var(--lightGray);
+  padding-bottom: 8px;
+}
+.ChoosenPlan p {
+  font-weight: bold;
+}
+.FinishGroup {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+.BlueBackground {
+  background-color: var(--magnolia);
+  font-size: 0.9em;
+  padding: 10px;
+  border-radius: 8px;
+}
+.Final {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 8px;
+  font-size: 0.9em;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+.FinalPrice {
+  font-weight: bold;
+  color: var(--purplishblue);
+}
+.Footer {
+  display: flex;
+  /* position: fixed; */
+  bottom: 0;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.Footer button {
+  margin: 16px 0;
+  background-color: var(--marineBlue);
+  color: var(--white);
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.Footer a {
+  display: block;
+  align-items: center;
+  margin: 20px;
+  text-decoration: none;
+}

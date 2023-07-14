@@ -1,0 +1,53 @@
+.Personal {
+  color: var(--marineBlue);
+}
+.Heading {
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+.Info {
+  margin-bottom: 16px;
+}
+.FormGroup {
+  margin-bottom: 10px;
+}
+.FormGroup label {
+  display: block;
+  margin-bottom: 4px;
+}
+.FormGroup input {
+  width: 100%;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.LabelSection {
+  display: flex;
+  justify-content: space-between;
+}
+.Error {
+  font-size: 0.9em;
+  color: var(--strawberryRed);
+}
+.InputErrorBorder {
+  border: 1px solid var(--strawberryRed);
+}
+.Footer {
+  position: fixed;
+  margin-left: -32px;
+  bottom: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.Footer button {
+  margin: 16px;
+  background-color: var(--marineBlue);
+  color: var(--white);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+}

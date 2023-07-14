@@ -1,0 +1,28 @@
+.Footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.blank {
+  width: 10px;
+  height: 10px;
+}
+
+.Footer button {
+  margin: 16px;
+  background-color: var(--marineBlue);
+  color: var(--white);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+}
+.next {
+  text-decoration: none;
+  color: inherit;
+}

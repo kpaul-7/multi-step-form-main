@@ -1,0 +1,21 @@
+.Processed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Processed * {
+  margin: 8px 0;
+}
+.Processed img {
+  width: 40px;
+}
+.Thanks {
+  font-size: 18px;
+  font-weight: 700;
+}
+.Message {
+  margin: 0 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
