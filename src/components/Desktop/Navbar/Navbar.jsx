@@ -1,9 +1,19 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import MobileHeroImg from "../../../Assests/images/bg-sidebar-desktop.svg";
 import style from "./Navbar.module.css";
+import { useSelector } from "react-redux";
+import { useEffect } from "react";
 const Navbar = () => {
   const location = useLocation();
   const pathname = location.pathname;
+  const isPersonalField = useSelector((state) => state.personal.status);
+  const navigate = useNavigate();
+  console.log(isPersonalField);
+  useEffect(() => {
+    if (!isPersonalField) {
+      navigate("/");
+    }
+  }, [isPersonalField, navigate]);
   return (
     <div className={style.Navbar}>
       <img src={MobileHeroImg} alt="mobile background" />
